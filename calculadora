@@ -1,0 +1,77 @@
+#include <stdio.h> 
+#include <locale.h>
+
+  int main() {
+ 
+  float operacao = 0; 
+  float s1 = 0; 
+  float s2 = 0; 
+  float sub1 = 0; 
+  float sub2 = 0; 
+  float m1 = 0; 
+  float m2 = 0; 
+  float d1 = 0; 
+  float d2 = 0;
+
+  printf("CALCULADORA \n");
+  printf("Escolha sua operação: \n");
+  printf("Soma(1)\n");
+  printf("Subtração(2)\n");
+  printf("Multiplicação(3)\n");
+  printf("Divisão(4)\n");
+  scanf("%f", &operacao);
+
+  if (operacao == 1) {
+    
+    printf("Você escolheu SOMA! \n");
+    printf("Escolha o primeiro número: \n");
+    scanf("%f", &s1);
+    printf("Escolha o segundo número: \n");
+    scanf("%f", &s2);
+    
+    float rSoma = s1+s2;
+    
+    printf("O seu resultado é: %0.2f", rSoma);
+    
+  } else if (operacao == 2) {
+    
+    printf("Você escolheu SUBTRAÇÃO! \n");
+    printf("Escolha o primeiro número: \n");
+    scanf("%f", &sub1);
+    printf("Escolha o segundo número: \n");
+    scanf("%f", &sub2);
+    
+    float rSubtracao = sub1-sub2;
+    
+    printf("O seu resultado é: %0.2f", rSubtracao);
+    
+  } else if (operacao == 3) {
+    
+    printf("Você escolheu MULTIPLICAÇÃO! \n");
+    printf("Escolha o primeiro número: \n");
+    scanf("%f", &m1);
+    printf("Escolha o segundo número: \n");
+    scanf("%f", &m2);
+    
+    float rMultiplicacao = m1*m2;
+    
+    printf("O seu resultado é: %0.2f", rMultiplicacao);
+    
+  } else if (operacao == 4) {
+    
+    printf("Você escolheu DIVISÃO! \n");
+    printf("Escolha o primeiro número: \n");
+    scanf("%f", &d1);
+    printf("Escolha o segundo número: \n");
+    scanf("%f", &d2);
+    
+    float rDivisao = d1/d2;
+    
+    printf("O seu resultado é: %0.2f", rDivisao);
+    
+  } else {
+    printf("Operação não identificada!");
+  };
+
+  return 0;
+};
